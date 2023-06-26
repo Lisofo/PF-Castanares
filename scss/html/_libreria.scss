@@ -13,7 +13,6 @@
     padding: 2rem;
     .libro1{
         @include productos(200px, 200px);
-        
     }
     .libro2{
         @include productos(200px, 200px);
@@ -31,13 +30,19 @@
         display: none;
     }
     div{
+        border: black 5px solid;
         img{
-            width: 80%;
-            object-fit: cover;
+            width: 100%;
+            object-fit: fill;
             object-position: center;
         }
     }
-    
+    .description-item{
+        border: black 3px solid;
+        background-color: $color-fondo;
+        text-align: center;
+        font-size: 170%;
+    }
 }
 
 @import"../extra/mediaq";
